@@ -931,8 +931,8 @@
     <div class="hero-grid">
       <div>
         <span class="hero-badge"><span class="dot"></span> Nova era Bambu Lab · Lançamento 2026</span>
-        <h1>Bambu Lab P2S dos EUA <span>direto na sua porta</span>, com a nova era da Bambu Lab</h1>
-        <p class="lead">A sucessora da P1S — a impressora 3D mais vendida do mundo. Agora com AI Oversight pra detectar erros automaticamente, AMS 2.0 com secagem ativa de filamento e touchscreen interativo. A GBS pesquisa, compra e entrega — produto + frete + impostos já inclusos. Sem trabalho, sem susto na alfândega.</p>
+        <h1>Bambu Lab P2S Combo — <span>impressora + AMS 2.0</span>, direto na sua porta</h1>
+        <p class="lead">A sucessora da P1S — agora em versão Combo: o pacote oficial Bambu Lab que já vem com o AMS 2.0 incluído (sistema multi-cor com secagem ativa de filamento). Adiciona AI Oversight pra detectar erros automaticamente e touchscreen interativo. A GBS pesquisa, compra e entrega — produto + frete + impostos já inclusos.</p>
 
         <div class="hero-price-card">
           <div class="launch-tag">🚀 Lançamento mundial · Bambu Lab P2S 2026</div>
@@ -1034,15 +1034,15 @@
       </div>
 
       <div class="compare-card winner">
-        <h3>🇺🇸🇧🇷 GlobalBrasilShop</h3>
+        <h3>🇺🇸🇧🇷 GlobalBrasilShop · P2S Combo</h3>
         <div class="compare-price">R$ 9.970<sup style="font-size:18px;">*</sup></div>
-        <div class="compare-sub">Preço final na sua porta, sem surpresas <em style="opacity:0.7;">*sujeito à cotação do dólar do dia</em></div>
+        <div class="compare-sub">P2S + AMS 2.0 incluso · preço final na sua porta <em style="opacity:0.7;">*sujeito à cotação do dólar do dia</em></div>
         <ul class="compare-list">
+          <li><span class="icon icon-yes">✓</span> P2S Combo: impressora + AMS 2.0 com secagem ativa</li>
+          <li><span class="icon icon-yes">✓</span> Produto + frete + impostos já calculados em BRL</li>
           <li><span class="icon icon-yes">✓</span> Atendimento em português via WhatsApp</li>
-          <li><span class="icon icon-yes">✓</span> Produto + frete + impostos já calculados</li>
-          <li><span class="icon icon-yes">✓</span> Versão mais nova do mercado americano</li>
           <li><span class="icon icon-yes">✓</span> Rastreio completo do pedido até a entrega</li>
-          <li><span class="icon icon-yes">✓</span> Pagamento em BRL (Pix, cartão, boleto)</li>
+          <li><span class="icon icon-yes">✓</span> Pagamento em BRL (Pix, cartão até 18×, boleto)</li>
         </ul>
       </div>
     </div>
@@ -1188,7 +1188,7 @@
     </div>
 
     <div class="pricing-card">
-      <div class="pre-price">Bambu Lab P2S — Edição Brasil</div>
+      <div class="pre-price">Bambu Lab P2S Combo — impressora + AMS 2.0 · Edição Brasil</div>
       <div class="big-price">R$ 9.970<sup style="font-size:24px;color:var(--primary);">*</sup><small> à vista no Pix</small></div>
 
       <div class="installments-box">
@@ -1361,14 +1361,14 @@
 <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal" role="document">
     <div class="modal-header">
-      <h3 id="modalTitle">Finalizar pedido — Bambu Lab P2S</h3>
+      <h3 id="modalTitle">Finalizar pedido — Bambu Lab P2S Combo</h3>
       <button type="button" class="modal-close" onclick="closeCheckoutModal()" aria-label="Fechar">×</button>
     </div>
     <div class="modal-body">
       <div class="modal-summary">
         <div>
           <div class="summary-label">Seu pedido</div>
-          <div class="summary-product">Bambu Lab P2S — Edição Brasil</div>
+          <div class="summary-product">Bambu Lab P2S Combo (com AMS 2.0) — Edição Brasil</div>
         </div>
         <div class="summary-price">R$ 9.970*</div>
       </div>
@@ -1475,7 +1475,7 @@
     m.classList.add('open');
     document.body.style.overflow = 'hidden';
     setTimeout(() => { const f = document.getElementById('cpf'); if (f) f.focus(); }, 200);
-    track('begin_checkout', { product: 'Bambu Lab P2S', value: 9970, currency: 'BRL' });
+    track('begin_checkout', { product: 'Bambu Lab P2S Combo', value: 9970, currency: 'BRL' });
   }
   function closeCheckoutModal() {
     document.getElementById('checkoutModal').classList.remove('open');
@@ -1567,7 +1567,7 @@
     const get = id => f.querySelector('#' + id).value.trim();
     const compl = get('complemento');
     const msg =
-`Olá! Quero comprar a *Bambu Lab P2S* por R$ 9.970*
+`Olá! Quero comprar a *Bambu Lab P2S Combo* (com AMS 2.0) por R$ 9.970*
 
 *👤 Dados do titular:*
 Nome: ${get('nome')}
@@ -1582,7 +1582,7 @@ CEP: ${get('cep')}
 
 Aguardo confirmação do valor final (cotação do dólar do dia) e instruções de pagamento.`;
     track('qualify_lead', {
-      product: 'Bambu Lab P2S',
+      product: 'Bambu Lab P2S Combo',
       value: 9970,
       currency: 'BRL',
       city: get('cidade'),
